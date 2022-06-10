@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .father{
+      width: 600px;
+      height: 600px;
+      background-color: pink;
+
+    }
+
+    .son{
+      /* 给他设置一个定位 */
+      /* 1.2祖先元素中有定位，则相对于最近有定位的祖先元素运动 */
+      position: relative;
+      right: 0;
+      bottom: 0;
+      width: 400px;
+      height: 400px;
+      background-color: skyblue;
+    }
+
+    .sun{
+      /* 绝对定位 */
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      /* 1.1祖先元素皆没有定位，则默认对于浏览器移动 */
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="father">
+    <div class="son">
+      <div class="sun"></div>
+    </div>
+  </div>
+  
+</body>
+</html>

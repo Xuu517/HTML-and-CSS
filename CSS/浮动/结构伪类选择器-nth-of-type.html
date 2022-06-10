@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 需求：找到第三个li标签 */
+    /* 1.使用nth-child */
+    li:nth-child(4){
+    background-color: red;
+    /* 加入div标签后，需将数字改为4 */
+    }
+
+    /* 2.使用nth-of-type */
+    li:nth-of-type(3){
+      background-color: skyblue;
+
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li></li>
+    <li></li>
+    <div>狸猫</div>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  
+</body>
+</html>

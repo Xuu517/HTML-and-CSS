@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 导航整体ul里面是item在里面有a */
+    /* 1.去除默认的margin和padding */
+    *{
+          margin: 0;
+          padding: 0;
+    }
+
+    /* 2.找到ul,去除小圆点 */
+    ul{
+      list-style: none;
+    }
+
+    /* 3.找到li标签，设置浮动让li一行中显示 */
+    ul li{
+      float:left;
+    }
+    /* 4.找到a标签设置宽高 */
+    ul li a{
+      /* a标签默认行内元素，不能直接设置宽高 */
+      /* 1.转换为块元素 ，块元素独占父元素的一行*/
+      /* 2.转换为行内块元素 */
+      display: block;
+      width: 80px;
+      height: 50px;
+      background-color: #ffc0cb;
+      text-align: center;
+      line-height: 50px;
+      text-decoration: none;
+      color:white;
+      font-size: 16px;
+      /* 谷歌浏览器中默认文字大小为16px */
+    }
+
+    ul li a:hover{
+      background-color: skyblue;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">新闻1</a></li>
+    <li><a href="#">新闻1</a></li>
+    <li><a href="#">新闻1</a></li>
+    <li><a href="#">新闻1</a></li>
+    <li><a href="#">新闻1</a></li>
+    <li><a href="#">新闻1</a></li>
+    <li><a href="#">新闻1</a></li>
+    <li><a href="#">新闻1</a></li>
+  </ul>
+</body>
+</html>

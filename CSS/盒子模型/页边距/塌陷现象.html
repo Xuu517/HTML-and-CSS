@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+
+    }
+    .father{
+      width:400px;
+      height: 400px;
+      background-color: pink;
+      /* 给父元素设置border-top和padding-top可以解决塌陷 */
+      /* border-top: 1px solid #000; */
+      /* padding-top: 1px; */
+      
+    }
+    .son{
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      margin-top: 100px;
+      /* 出现塌陷现象，父元素子元素一起下移 */
+    }
+  </style>
+</head>
+<body>
+  <div class="father">
+    <div class="son">
+
+    </div>
+  </div>
+  
+</body>
+</html>
